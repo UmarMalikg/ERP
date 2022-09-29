@@ -1,0 +1,38 @@
+.table-cahracteristics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+}
+td{
+    text-align: center;
+}
+.add-edit-button button{
+    border-radius: 5px;
+    background-color:rgb(243, 28, 71);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 18px;
+    padding: 5px;
+    width: fit-content;
+}
+.add-edit-button button:hover{
+    color: rgb(243, 28, 71);
+    border: 2px solid rgb(243, 28, 71);
+    background-color: #fff;
+}
+.edit-icon{
+    cursor: pointer;
+    color: black;
+}
+td{
+    margin-top: 20px;
+}

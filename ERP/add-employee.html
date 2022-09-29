@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add employee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css\general.css">
+    <link rel="stylesheet" href="css\forms.css">
+    <link rel="stylesheet" href="css\dashboard.css">
+    <link rel="stylesheet" href="css\total.css">
+    <link rel="stylesheet" href="css\portal.css">
+    <link rel="stylesheet" href="css\navbar.css">
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="hamburger"><i class="menu-btn fa-solid fa-bars"></i></div>
+        <div class="company-logo">
+            <img src="images\logo_umar-removebg-preview.png" alt="">
+        </div>
+        <div class="links-o-pages">
+            <div class="home page-links"><a href="dashboard.html"> Dashboard</a></div>
+            <div class="contact-us page-links">Contact Us</div>
+            <div class="abput-us page-links">About Us</div>
+        </div>
+        <div class="right">
+            <div class="notification"><i class="fa-regular fa-bell"></i></div> 
+            <div class="emp-dp">
+                <img src="images\profil.png" alt="">
+            </div>   
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <!-- <div class="detail">
+            <div class="dp-image">
+                <img src="images\profil.png" alt="" class="person" id="person-dp">
+            </div>
+            <div class="name">Umar</div>
+            <div id="id">2020-CS-533</div>
+            <div class="departement">Computer Science</div>
+        </div> -->
+        <div class="companylogo">
+            <img src="" alt="">
+        </div>
+        <div class="todo">
+            <div class="dashboard todos">
+                <div class="todo-detail">
+                    <div class="icon">
+                        <img src="images\dashboard.jpg" alt="">
+                    </div>
+                    <div class="access"><a href="dashboard.html">Dashboard</a></div>
+                </div>
+                <div class="goto">&gt;</div>
+            </div>
+        </div>
+        <div class="todo">
+            <div class="Employees todos">
+                <div class="todo-detail">
+                    <div class="icon">
+                        <img src="images\employee.png" alt="">
+                    </div>
+                    <div class="access">Employees</div>
+                </div>
+                <div class="goto">&gt;</div>
+            </div>
+            <div class="hide add-edit-employee show-employee"><a href="add-employee.html">Add Employee</a></div>
+            <div class="hide add-edit-employee show-employee"><a href="edit-employee.html"> Edit Employee</a></div>
+            <div class="hide add-edit-employee show-employee"><a href="leaves.html">Leaves</a> </div>
+            <div class="hide add-edit-employee show-employee"><a href="#"> Strike</a></div>
+        </div>
+        <div class="todo">
+            <div class="organization todos">
+                <div class="todo-detail">
+                    <div class="icon">
+                        <img src="images\organization.png" alt="">
+                    </div>
+                    <div class="access">Organizaation</div>
+                </div>
+                <div class="goto">&gt;</div>
+            </div>
+            <div class="hide add-edit-company show-organization"><a href="add-company.html">Conmpanies</a> </div>
+            <div class="hide add-edit-department show-organization"><a href="add-department.html">Departments</a> </div>
+        </div>
+        <div class="todo">
+            <div class="accountant Info todos">
+                <div class="todo-detail">
+                    <div class="icon">
+                        <img src="images\accountant.png" alt="">
+                    </div>
+                    <div class="access">Accountant</div>
+                </div>
+                <div class="goto">&gt;</div>
+            </div>
+            <div class="hide add-edit-employee show-accounts"><a href="set-payroll.html"> Set Payroll</a></div>
+        </div>
+        <div class="todo">
+            <div class="recruitement todos">
+                <div class="todo-detail">
+                    <div class="icon">
+                        <img src="images\recruitement.png" alt="">
+                    </div>
+                    <div class="access">Recruitement</div>
+                </div>
+                <div class="goto">&gt;</div>
+            </div>
+            <div class="hide post-job show-recruitment">Post Jobs</div>
+            <div class="hide post-job show-recruitment">Job Interviews</div>
+            <div class="hide post-job show-recruitment">Job Candidates</div>
+        </div>
+    </div>
+    <!-- add employee -->
+    <div class="portal-name container">
+        <div class="characteristic emp-char">
+            Add Employees
+        </div>
+        <hr class="main-line emp-main-line">
+        <form action="" method="post" class="added-employee">
+            <div class="basic-info">
+                <span class="dropdown basic">
+                    Basic Information <span>&gt;</span>
+                </span>
+                <hr class="droped">
+                <div class="opening grid3 des-basic">
+                    <div class="emp-name">
+                        <label for="name">
+                            <div>Full name:</div>
+                        </label>
+                        <input type="text" class="enter" id="name" placeholder="Enter the first name" name="name"
+                            required>
+                    </div>
+                    <div class="father-name">
+                        <label for="name">
+                            <div>Father Name:</div>
+                        </label>
+                        <input type="text" class="enter" id="father-name" name="father-name"
+                            placeholder="Enter the father name" required>
+                    </div>
+                    <div class="emp-email">
+                        <label for="email">
+                            <div>Emali:</div>
+                        </label>
+                        <input type="email" class="enter" id="email" name="email" placeholder="Enter the email"
+                            required>
+                    </div>
+
+                    <div class="phone">
+                        <label for="phone">
+                            <div>Mobile:</div>
+                        </label>
+                        <input type="text" class="enter" id="cnic" name="cnic" placeholder="Enter the Mobile Number"
+                            required>
+                    </div>
+                    <div class="cnic">
+                        <label for="cnic">
+                            <div>CNIC:</div>
+                        </label>
+                        <input type="text" class="enter" id="cnic" name="cnic" placeholder="Enter the CNIC" required>
+                    </div>
+                    <div class="gender">
+                        <div class="label">
+                            Gender:
+                        </div>
+                        <label for="male" class="enter-radio">
+                            Male
+                        </label>
+                        <input type="radio" class="enter-radio" id="mail" name="gender" required>
+                        <label for="female" class="enter-radio">
+                            Female
+                        </label>
+                        <input type="radio" class="enter-radio" id="femail" name="gender" required>
+                        <label for="other" class="enter-radio">
+                            Other
+                        </label>
+                        <input type="radio" class="enter-radio" id="other" name="gender" required>
+                    </div>
+                    <div class="age">
+                        <label for="age">
+                            <div>Age:</div>
+                        </label>
+                        <input type="number" class="enter" id="age" name="age" placeholder="Enter the age" min="18"
+                            max="35" required>
+                    </div>
+                    <div class="country">
+                        <label for="country">
+                            <div>
+                                Which Country:
+                            </div>
+                        </label>
+                        <select name="Country" id="country">
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India" label="india"></option>
+                            <option value="china" label="china"></option>
+                            <option value="afghnistan" label="afghanistan"></option>
+                        </select>
+                    </div>
+                    <div class="department">
+                        <label for="department">
+                            <div>
+                                Selec Department:
+                            </div>
+                        </label>
+                        <select name="depatment" id="depatment">
+                            <option value="computer scicnce">Computer Science</option>
+                            <option value="mechanical" label="Mechanical"></option>
+                            <option value="civil" label="Civil"></option>
+                            <option value="electrical" label="Electrical"></option>
+                        </select>
+                    </div>
+                    <div class="designation">
+                        <label for="designation">
+                            <div>Designation:</div>
+                        </label>
+                        <select name="designation" id="designation">
+                            <option value="employee">employee</option>
+                            <option value="administator" label="administator"></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="work-info ">
+                <span class="dropdown work">
+                    Work Information <span>&gt;</span>
+                </span>
+                <hr class="droped">
+                <div class="opening des-work grid3">
+                    <div class="employement-type">
+                        <label for="employement-type">
+                            <div>
+                                Employement Type:
+                            </div>
+                        </label>
+                        <select name="employement-type" id="employement-type">
+                            <option value="manager">Manager</option>
+                            <option value="Security" label="Security"></option>
+                            <option value="xyz" label="xyz"></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="banking-info ">
+                <span class="dropdown bank">
+                    Banking Information <span>&gt;</span>
+                </span>
+                <hr class="droped">
+                <div class="opening des-bank grid3">
+                    <div class="pay-type">
+                        <label for="payment-type">
+                            <div>
+                                Payment Type:
+                            </div>
+                        </label>
+                        <select name="payment-type" id="payement-type">
+                            <option value="Bank transfer">Bank transfer</option>
+                            <option value="Jazz cash" label="Jazz cash"></option>
+                            <option value="xyz" label="xyz"></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="emergency-contact-info">
+                <span class="dropdown emer-contact">
+                    Emergency Contact Information <span>&gt;</span>
+                </span>
+                <hr class="droped">
+                <div class="opening des-emer-contact  grid2">
+                    <div class="emer-contact-name">
+                        <label for="name">
+                            <div> Emergency Contact Name:
+                            </div>
+                        </label>
+                        <input type="text" id="eme-cont-name">
+                    </div>
+                    <div class="emer-contact-mobile">
+                        <label for="name">
+                            <div> Emergency Contact Mobile:
+                            </div>
+                        </label>
+                        <input type="text" id="eme-cont-mobile">
+                    </div>
+                    <div class="emer-contact-email">
+                        <label for="name">
+                            <div> Emergency Contact Email:</div>
+                        </label>
+                        <input type="text" id="eme-cont-email">
+                    </div>
+                    <div class="emer-contact-address">
+                        <label for="name">
+                            <div> Emergency Contact Address:</div>
+                        </label>
+                        <input type="text" id="eme-cont-address">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="button">
+                <button class="save" type="submit">Save</button>
+                <button class="reset" type="reset">Reset</button>
+                <button class="back">Back</button>
+            </div>
+            <hr class="main-line">
+        </form>
+        <!-- total employee -->
+        <div class="totalemployees">
+            <div class="table-cahracteristics">
+                <div class="table-name">Total Emplyees</div>
+                <div class="add-edit-button">
+                    <button class="add-employee">Add Employee <span>+</span></button>
+                </div>
+            </div>
+            <hr class="main-line-inside">
+            <div class="table table-of-employee">
+                <table class="employee-table">
+                    <tr>
+                        <th class="e-id">#ID</th>
+                        <th class="e-name">e-name</th>
+                        <th class="e-f-name">f-name</th>
+                        <th class="e-cnic">CNIC</th>
+                        <th class="e-mobile-number">Mobile Number</th>
+                        <th class="e-join-date">Joining Date</th>
+                        <th class="e-end-date">Retirement Date</th>
+
+                    </tr>
+                    <tr>
+                        <td id="empl-ID">1</td>
+                        <td id="empl-name">Umar</td>
+                        <td id="empl-f-name">Gulzar</td>
+                        <td id="empl-cnic">33567-88364983-9</td>
+                        <td id="empl-mobile-num">0302-47568938</td>
+                        <td id="empl-join-date">15/07/2009</td>
+                        <td id="empl-retire-date">Active</td>
+                        <td class="edit-icon"> <a href="edit-employee.html"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td id="empl-ID">2</td>
+                        <td id="empl-name">Shamrez</td>
+                        <td id="empl-f-name">Akram</td>
+                        <td id="empl-cnic">33567-88364983-9</td>
+                        <td id="empl-mobile-num">0302-47568938</td>
+                        <td id="empl-join-date">15/07/2009</td>
+                        <td id="empl-retire-date">Active</td>
+                        <td class="edit-icon"> <a href="edit-employee.html"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td id="empl-ID">3</td>
+                        <td id="empl-name">Bilal</td>
+                        <td id="empl-f-name">Amir Hamza</td>
+                        <td id="empl-cnic">33567-88364983-9</td>
+                        <td id="empl-mobile-num">0302-47568938</td>
+                        <td id="empl-join-date">15/07/2009</td>
+                        <td id="empl-retire-date">Active</td>
+                        <td class="edit-icon"> <a href="edit-employee.html"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="js\jquery.js"></script>
+        <script src="js\hrms.js"></script>
+</body>
+
+</html>
